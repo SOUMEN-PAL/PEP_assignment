@@ -171,12 +171,13 @@ playButton.onclick = async function visualise() {
     //     numberbox.value = "";
     //     alert("Queen value is too large");
     //     return;
-    // } else if (n < 1) {
-    //     numberbox.value = "";
-    //     alert("Queen value is too small");
-    //     return;
-    // }
-
+    // } else 
+    if (n < 1) {
+         numberbox.value = "";
+         alert("Queen value is too small");
+         return;
+    }
+    
     // Removing all the of previous execution context
     while (chessBoard.hasChildNodes()) {
         chessBoard.removeChild(chessBoard.firstChild);
